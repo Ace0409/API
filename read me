@@ -1,0 +1,53 @@
+🚀 STEP 0 — CREATE PROJECT
+1. Open VS Code
+2. Create folder:
+employee-api
+3. Open folder in VS Code
+4. Open terminal:
+Ctrl + `
+5. Initialize project:
+npm init -y
+6. Install packages (as per instructions PDF):
+npm install express body-parser mongoose joi
+📁 STEP 1 — CREATE FILES (VERY IMPORTANT)
+
+Inside folder create EXACTLY these files:
+
+server.js
+db.js
+routes.js
+validation.js
+✍️ STEP 2 — WRITE CODE (FILE BY FILE)
+
+STEP 3 — RUN PROJECT
+node server.js
+
+👉 Output:
+
+MongoDB Connected
+Server running on http://localhost:3000
+🧪 STEP 4 — TEST IN POSTMAN
+✅ 1. GET ALL
+GET http://localhost:3000/employees
+✅ 2. POST
+POST http://localhost:3000/employees
+
+Body → JSON:
+
+{
+  "name": "John",
+  "position": "Developer",
+  "salary": 50000
+}
+✅ 3. GET BY ID
+GET http://localhost:3000/employees/<id>
+✅ 4. PUT (UPDATE)
+PUT http://localhost:3000/employees/<id>
+
+Body:
+
+{
+  "name": "Updated"
+}
+✅ 5. DELETE
+DELETE http://localhost:3000/employees/<id>
